@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   /* Define the tile */
+.tile {
+  width: 100px;
+  height: 100px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  margin: 50px auto; /* Increased margin for movement */
+  position: relative;
+  border-radius: 10px; /* Added rounded corners */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Added shadow for depth */
+}
+
+/* Define the complex animation */
+@keyframes complex-animation {
+  0%, 100% {
+    transform: scale(1) translateY(0);
+    background-color: #333;
+  }
+  25% {
+    transform: scale(1.1) translateY(-20px);
+    background-color: #e74c3c;
+  }
+  50% {
+    transform: scale(1) translateY(0);
+    background-color: #3498db;
+  }
+  75% {
+    transform: scale(0.9) translateY(20px);
+    background-color: #f1c40f;
+  }
+}
+
+.tile:hover {
+  animation-name: complex-animation;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  animation-iteration-count: infinite;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="tile">Hover me</div>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header,nav,div,footer{
+            border: 2px solid rgb(255, 255, 255);
+        
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            background-color: #2196F3;
+            padding: 10px;
+            gap: 10px;
+            
+        }
+        .grid-container > div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 15px;
+            grid-row: 3;
+            
+        }
+        header{
+            text-align: center;
+            padding: 20px 0;
+            font-size: 15px;        
+            grid-row:1;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        nav{
+            text-align: center;
+            padding: 20px 0;
+            font-size: 15px;
+            grid-row:2;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            background-color: rgba(255, 255, 255, 0.8);
+    
+        }
+        footer{
+            text-align: center;
+            padding: 20px 0;
+            font-size: 15px;
+            grid-row:4;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            background-color: rgba(255, 255, 255, 0.8);
+        }     
+
+</style>
+</head>
+<body>
+<div class="grid-container">
+    <header>Header</header>
+    <nav>Navigation Bar</nav>
+    <div id="content1">Left Side Area</div>    
+    <div id="content3">Main Content</div>
+    <div id="content2">Right Side Area</div>
+    <footer>Footer</footer>
+</div>
+    
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Different Background Properties */
+        #bg_color {
+            background-color: yellow;
+            font-weight: bold;
+        }
+
+        #bg_img {
+            background-image: url(image.jpg);            width: 100%;
+            background-repeat: no-repeat; 
+            font-weight: bold;
+            background-size: cover;
+        }
+        
+        #gradient {
+            background: linear-gradient(to right, red , yellow);
+            font-weight: bold;
+        }
+
+        
+        #bg_repeat{
+            background-image: url(pattern.png);
+            font-weight: bold;
+            background-size: 300px;
+            background-repeat: repeat-x;
+                       
+        }
+
+        #bg_position {
+            background-image: url(image.jpg);   
+            background-size: cover; 
+            font-weight: bold;
+            background-position: center;
+        }
+        
+
+        
+
+
+        /* Display Course Information with Different Font Properties */
+        .course-info {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            font-size: 20px;
+        }
+        .course-info h3{
+            text-decoration: underline;
+        }
+
+        .description {
+            color: gray;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .level {
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+<body>
+    <div id="bg_color">Background Color</div><br>
+    <div id="bg_img">Background Image</div><br>
+    <div id="gradient">Background Gradient</div><br>
+    <div id="bg_repeat">Background Repeat</div><br>
+    <div id="bg_position">Background Position</div><br>
+
+    <div class="course-info">
+        <h3>Introduction to CSS </h3>
+        <p class="instructor">Instructor: John Smith</p>
+        <p class="duration">Duration: 4 weeks</p>
+        <p class="level">Level: Beginner</p>
+        <p class="description">This course provides an introduction to CSS, covering basic syntax, selectors, and styling properties.</p>
+    </div>
+</body>
+</html>
